@@ -19,6 +19,15 @@
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "@pages/*":[
+        "src/router/pages/*"
+      ],
+      "@api/*": [
+        "src/router/api/*"
+      ],
+      "@state/*": [
+        "src/state/*"
       ]
     },
     "lib": [
