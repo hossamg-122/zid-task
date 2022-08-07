@@ -1,5 +1,6 @@
 // getters types
 export const GET_USER_DATA = "auth/GET_USER_DATA";
+export const VALIDATE_USER_DATA = "auth/GET_USER_DATA";
 // mutations types
 
 export const SET_USER_DATA = "auth/SET_USER_DATA";
