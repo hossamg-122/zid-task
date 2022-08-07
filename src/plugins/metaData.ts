@@ -13,3 +13,13 @@ export const register = {
   description:
     "Zid is a Saudi holding company, established in 2017, aiming to enable the retail sector to enter the world of electronic retail in an easy and professional way.",
 };
+export const payment = {
+  title: "Payment - زد",
+  description:
+    "Zid is a Saudi holding company, established in 2017, aiming to enable the retail sector to enter the world of electronic retail in an easy and professional way.",
+};
+export const profile = {
+  title: "Profile - زد",
+  description:
+    "Zid is a Saudi holding company, established in 2017, aiming to enable the retail sector to enter the world of electronic retail in an easy and professional way.",
+};

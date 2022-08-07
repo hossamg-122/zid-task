@@ -3,5 +3,18 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
-export default Vue.extend({});
+import * as metaData from "@/plugins/metaData";
+
+export default Vue.extend({
+  name: "Profile",
+  metaInfo: {
+    title: metaData.profile.title,
+    meta: [
+      {
+        name: "description",
+        content: metaData.profile.description,
+      },
+    ],
+  },
+});
 </script>
