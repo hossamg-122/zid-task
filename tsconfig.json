@@ -7,9 +7,9 @@
     "moduleResolution": "node",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": false,
+    "forceConsistentCasingInFileNames": false,
+    "useDefineForClassFields": false,
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
@@ -43,7 +43,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
+, "src/state/store.js", "src/state/modules/auth.js"  ],
   "exclude": [
     "node_modules"
   ]
