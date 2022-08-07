@@ -1,47 +1,34 @@
-import { RouteConfig, Route } from "vue-router";
-const loggedIn = true;
+import { RouteConfig } from "vue-router";
 export const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "Home",
     component: () =>
-      import(/* webpackChunkName: "Home" */ "@pages/Home/Home.vue"),
+      import(
+        /* webpackChunkName: "Home-page" */ "@/router/pages/Home/Home.vue"
+      ),
   },
   {
     path: "/login",
     name: "Login",
     component: () =>
-      import(/* webpackChunkName: "Login" */ "@pages/Login/Login.vue"),
-    meta: {
-      beforeResolve(routeTo: Route, routeFrom: Route, next: Function) {
-        if (loggedIn) {
-          next({ name: "Home" });
-        } else {
-          next();
-        }
-      },
-    },
+      import(/* webpackChunkName: "Login" */ "@/router/pages/Login/Login.vue"),
   },
   {
     path: "/register",
     name: "Register",
     component: () =>
-      import(/* webpackChunkName: "Register" */ "@pages/Register/Register.vue"),
-    meta: {
-      beforeResolve(routeTo: Route, routeFrom: Route, next: Function) {
-        if (loggedIn) {
-          next({ name: "Home" });
-        } else {
-          next();
-        }
-      },
-    },
+      import(
+        /* webpackChunkName: "Register" */ "@/router/pages/Register/Register.vue"
+      ),
   },
   {
     path: "/profile",
     name: "Profile",
     component: () =>
-      import(/* webpackChunkName: "Profile" */ "@pages/Profile/Profile.vue"),
+      import(
+        /* webpackChunkName: "Profile" */ "@/router/pages/Profile/Profile.vue"
+      ),
     meta: {
       authRequired: true,
     },
@@ -50,6 +37,11 @@ export const routes: Array<RouteConfig> = [
     path: "/payment",
     name: "Payment",
     component: () =>
-      import(/* webpackChunkName:"Payment" */ "@pages/Payment/Payment.vue"),
+      import(
+        /* webpackChunkName:"Payment" */ "@/router/pages/Payment/Payment.vue"
+      ),
+    meta: {
+      authRequired: true,
+    },
   },
 ];
