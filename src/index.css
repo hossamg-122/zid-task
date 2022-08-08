@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* setuping the fonts of Zid website */
+
+@font-face {
+  font-family: "FFShamel";
+
+  src: url("./assets/fonts/ArbFONTS-FFShamelFamily-SansOneBook.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "FFShamel";
+
+  src: url("./assets/fonts/ArbFONTS-FFShamelFamily-SansOneBold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@layer base {
+  html {
+    font-family: "FFShamel", sans-serif;
+  }
+}
