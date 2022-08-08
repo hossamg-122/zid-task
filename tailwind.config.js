@@ -7,9 +7,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#5830C5",
-        primaryHovered: "#312490",
-        header: "#F2F2F2",
+        primary: "#8661A3",
+        secondary: "#FFD14B",
+        success: "#02A986",
+        accent: "#454545",
+        border: "#EEE",
+        dark: "#333",
+        light: "#FAFAFA",
+        gray: "#8F8F8F",
+        muted: "#ABABAB",
+        placeholder: "#B6B6B6",
+        black: "#000000",
       },
       fontFamily: {
         FFShamel: "FFShamel",
